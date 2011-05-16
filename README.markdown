@@ -27,12 +27,14 @@ your output a bit, making it easier to track the flow of your program in the
 event that you are having some trouble.
 An example of the output follows:
 
+```
 [21:04:01] [DEBUG]    Entering void Plugin::System::parseDescriptions().
 [21:04:01] [DEBUG]      Entering bool Plugin::XMLSpecReader::parseXML(QIODevice*, QSharedPointer<Plugin::Description>).
 [21:04:01] [DEBUG]      Leaving bool Plugin::XMLSpecReader::parseXML(QIODevice*, QSharedPointer<Plugin::Description>). Took 2 ms
 [21:04:01] [DEBUG]      Entering bool Plugin::XMLSpecReader::parseXML(QIODevice*, QSharedPointer<Plugin::Description>).
 [21:04:01] [DEBUG]      Leaving bool Plugin::XMLSpecReader::parseXML(QIODevice*, QSharedPointer<Plugin::Description>). Took 1 ms
 [21:04:01] [DEBUG]    Leaving void Plugin::System::parseDescriptions(). Took 4 ms
+```
 
 These are only active when QT_NO_DEBUG_OUPUT has not been defined and the log
 threshold is set to DEBUG.
