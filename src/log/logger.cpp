@@ -268,7 +268,6 @@ Logger::Logger() throw()
 
 Logger::~Logger() throw()
 {
-    qDebug() << "Closing logger.";
     if(logFile.isOpen())
         logFile.close();
 
